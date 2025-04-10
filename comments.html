@@ -8,19 +8,22 @@
 </head>
 <body>
     <header>
-        <a href="home.html"><div>Новости</div></a>
+        <a href="home.html"><div>HOME</div></a>
         <a href="proects.html"><div>Проекты</div></a>
         <a href="comments.html"><div>Комментарии</div></a>
     </header>
     <main>
         <div class="chat-window" id="chat-window">
-            <div id="comment"></div>
-            <div class="chat-item">
-                <input type="text" class="chat-input" id="chat-input" placeholder="Введите комментарий">
-                <button type="button" id="btn">Send</button>
-            </div>
+            <!-- <div class="message me"></div>
+            <div class="message other"></div> -->
+            
+        </div>
+        <div class="chat-item">
+            <input type="text" class="chat-input" id="chat-input">
+            <button type="button" id="btn">Send</button>
+            <button type="button" id="toggle-user">🔄</button>
         </div>
     </main>
-    <script src="comments.js"></script>
+    <script src="comments.js"></script> 
 </body>
 </html>
