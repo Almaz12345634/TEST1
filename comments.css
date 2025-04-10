@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+} 
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #cad3b0;
+    /* box-shadow: 0px 0px 10px inset; */
+    position: relative;
+    z-index: 10;
+    gap: 20px;
+    /* background-image: url(img/matrix.jpg); */
+    /* background-size: 300px; */
+    /* background-position: bottom; */
+}
+header div {
+    color:  #59bca6;
+    padding: 10px 25px;
+    border: 1px solid ;
+    border-radius: 5px;
+    background-color: #222621;
+    cursor: pointer;
+}
+header div:hover  {
+    background-color: #45526f;
+}
+main {
+    background-image: url(img/comment-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 92vh;
+}
+.chat-item {
+    width: 70%;
+    padding: 5px 10px;
+    border: 1px solid #59bca6;
+    border-radius: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+}
+.chat-item button {
+    background-color: #59bca6;
+    border: double;
+    border-radius: 30px 30px 10px;
+    cursor: pointer;
+}
+.chat-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+  
+.chat-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
+.chat-window {
+    padding: 10px;
+    overflow-y: auto;
+    width: 80%;
+    /* height: 85vh; */
+}
+.comment {
+    padding: 10px 20px;
+    background-color: #066bd1a8;
+    width: fit-content;
+    max-width: 300px;
+    border-radius: 15px;
+    margin: 10px;
+    color: aliceblue;
+    word-break: break-all;
+}
+.comment::before {
+    content: "almaz";
+    color: rgb(231, 17, 17);
+}
+#comment {
+    margin-bottom: 150px;
+}
+.chat-window::-webkit-scrollbar {
+    width: 15px; 
+  }
+  
+  .chat-window::-webkit-scrollbar-track {
+    background: #1f9944; 
+  }
+  
+  .chat-window::-webkit-scrollbar-thumb {
+    background-color: #176415; 
+    border-radius: 20px; 
+    border: 3px solid #176415; 
+  }
+
+@media (max-width: 700px) {
+    .chat-window {
+        width: 100%;
+    }
+    .chat-item {
+        width: 80%;
+    }
+}
